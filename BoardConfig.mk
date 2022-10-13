@@ -30,8 +30,8 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a73
 TARGET_USES_64_BIT_BINDER := true
 
-ENABLE_CPUSETS := true
-ENABLE_SCHEDBOOST := true
+#ENABLE_CPUSETS := true
+#ENABLE_SCHEDBOOST := true
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := trinket
@@ -114,7 +114,7 @@ TARGET_RECOVERY_QCOM_RTC_FIX := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_EXTRA_LANGUAGES := true
 TW_INCLUDE_NTFS_3G := true
-TW_FORCE_USE_BUSYBOX := true
+TW_USE_TOOLBOX := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file"
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
@@ -126,7 +126,6 @@ TW_H_OFFSET := -80
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 TARGET_USES_MKE2FS := true
-TW_EXCLUDE_TWRPAPP := true
 TW_NO_SCREEN_TIMEOUT := true
 TW_EXCLUDE_PYTHON := true
 TW_EXCLUDE_NANO := true
