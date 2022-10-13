@@ -36,6 +36,7 @@ on fs
     install_keyring
 
 on init
+    write /sys/touchpanel/double_tap 1
     mkdir /system/bin
     mkdir /system/etc
     symlink /system/etc /etc
